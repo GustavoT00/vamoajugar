@@ -1,27 +1,32 @@
 import React from 'react';
+import { Carousel as BootstrapCarousel } from 'react-bootstrap';
 
-const Carousel = () => {
+const MyCarousel = ({ items }) => {
   return (
-    <div id="carouselExample" className="carousel slide" data-ride="carousel">
-      <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img className="d-block w-100" src="..." alt="Primer Slide" />
-        </div>
-        <div className="carousel-item">
-          <img className="d-block w-100" src="..." alt="Segundo Slide" />
-        </div>
-        {/* Agrega más items de carrusel según sea necesario */}
-      </div>
-      <a className="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="sr-only">Anterior</span>
-      </a>
-      <a className="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="sr-only">Siguiente</span>
-      </a>
+    <div className="carousel-container">
+      <BootstrapCarousel
+        interval={8000}  
+        fade  
+        controls={false}  
+        className="custom-carousel"
+      >
+        {items.map(item => (
+          <BootstrapCarousel.Item key={item.id}>
+            <img
+              className="d-block w-100 custom-image"
+              src={item.image}
+              alt={`Slide ${item.id}`}
+            />
+            <BootstrapCarousel.Caption>
+              <h3>{item.caption}</h3>
+            </BootstrapCarousel.Caption>
+          </BootstrapCarousel.Item>
+        ))}
+      </BootstrapCarousel>
     </div>
   );
-}
+};
 
-export default Carousel;
+export default MyCarousel;
+
+
