@@ -1,0 +1,24 @@
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+}
+  
+.navbar-brand {
+    margin-right: auto;
+}
+  
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+  
+.header-content h1 {
+    margin: 0;
+}
+
+.custom-navbar {
+    background-color: #335365; /* Cambia esto al color que desees */
+}
