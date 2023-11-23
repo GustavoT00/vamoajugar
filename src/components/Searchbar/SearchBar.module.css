@@ -1,0 +1,25 @@
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+  
+.search-input {
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    margin-right: 8px; 
+}
+  
+.search-input::placeholder {
+    color: #fff;
+}
+  
+.search-button {
+    background-color: #51807F;
+    color: #fff;
+    border: none;
+}
+  
+  
