@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import Carousel from '../../components/Carousel/Carousel';
 import PropertyCard from '../../components/propiedadtarjeta/PropertyCard';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
 
 const Home = () => {
