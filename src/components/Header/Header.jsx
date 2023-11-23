@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Form, Button, Modal } from 'react-bootstrap';
 import LoginForm from '../UserProfile/LoginForm';
 import RegisterModal from '../UserProfile/RegisterModal';
+import SearchBar from '../Searchbar/Searchbar';
 
 const Header = () => {
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -23,7 +24,7 @@ const Header = () => {
           </a>
 
           <Form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" className="form-control form-control-dark" placeholder="Search..." aria-label="Search" />
+            <SearchBar />
           </Form>
 
           <div className="text-end">
@@ -45,8 +46,6 @@ const Header = () => {
           <LoginForm onClose={handleCloseLoginModal} />
         </Modal.Body>
       </Modal>
-
-      {/* Agrega el modal de registro */}
       <RegisterModal showModal={showRegisterModal} handleCloseModal={handleCloseRegisterModal} />
     </header>
   );

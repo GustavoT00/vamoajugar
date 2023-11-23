@@ -1,0 +1,65 @@
+/* Chat.css */
+.ChatContainer {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.UsersList {
+    flex: 1;
+}
+  
+.Chat {
+    flex: 2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+.ChatHeader {
+    background-color: #51807F;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+  
+.ChatMessages {
+    overflow-y: auto;
+    padding: 10px;
+    max-height: 300px;
+}
+  
+.ChatMessage {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+  
+.MyMessage {
+    background-color: #51807F;
+    color: #fff;
+}
+  
+.TheirMessage {
+    background-color: #f0f0f0;
+}
+  
+.ChatForm {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+  
+.ChatForm input {
+    flex: 1;
+    margin-right: 10px;
+}
+  
+.ChatForm button {
+    background-color: #51807F;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+  
